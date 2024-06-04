@@ -1,0 +1,20 @@
+from flask import Flask, render_template, request
+ 
+app = Flask(__name__)
+ 
+# Ruta para el formulario de entrada de datos
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+# Ruta para procesar los datos del formulario
+@app.route('/calcular', methods=['POST'])
+def calcular():
+    nombre = request.form['nombre']
+    edad = int(request.form['edad'])
+    genero = request.form['genero']
+    return render_template('resultado.html', nombre=nombre, edad=edad, genero=genero)
+ 
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
+
