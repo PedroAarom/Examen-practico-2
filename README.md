@@ -12,7 +12,7 @@
 ### Aparte crea la RDS desde la interfaz de AWS
 ### En el archivo app.py puedes ver el host, user, la base de datos y la password, todo esto tienes que cambiarlo segun lo crees en la rds
 ### para lo de mysql, usa estos comandos 
-### sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rp
+### sudo wget https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
 ### sudo dnf install mysql80-community-release-el9-1.noarch.rpm -y
 ### sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
 ### sudo dnf install mysql-community-client -y
